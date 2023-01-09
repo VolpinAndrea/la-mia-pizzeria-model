@@ -6,4 +6,23 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Nuova cartella1\**" />
+    <Content Remove="Nuova cartella1\**" />
+    <EmbeddedResource Remove="Nuova cartella1\**" />
+    <None Remove="Nuova cartella1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Class.cs" />
+    <Compile Remove="Utils\Class.cs" />
+    <Compile Remove="Views\Shared\Class.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Remove="Views\Shared\IlMioLayout.cshtml" />
+    <Content Remove="Views\Shared\mioLayout.cshtml" />
+    <Content Remove="wwwroot\img\pizza1.jpg" />
+  </ItemGroup>
+
 </Project>

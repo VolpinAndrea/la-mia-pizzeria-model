@@ -1,8 +1,36 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = "_IlMioLayout";
 }
+@model List<Pizza>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+
+<div class="container bg-black">
+
+    <div class="row text-white">
+
+
+            <div class="flex-container">
+
+                <div class="row justify-content-center">
+
+                @foreach (Pizza pizza in Model)
+                {
+                    <div class="col-8 col-md-4 mt-4 bg-secondary m-2">
+                        <div class="rounded-0 shadow-lg  text-center">
+                            <img src="@pizza.Image" class="card-img-top rounded-circle" alt="immagine 1">
+
+                            <div class="card-body pt-0 px-0 ">
+                                <h4 class="text-orange pt-3">@pizza.Name</h4>
+                                <p class="">@pizza.Description</p>
+                                <h6 class="text-orange pb-3 ">@pizza.Prezzo</h6>
+                            </div>
+                        </div>
+                    </div>          
+                }
+
+                </div>
+
+
+            </div>
+    </div>
 </div>

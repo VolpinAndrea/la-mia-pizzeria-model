@@ -16,3 +16,10 @@ html {
 body {
   margin-bottom: 60px;
 }
+.text-orange {
+    color: orange;
+}
+
+.bg-orange {
+    background-color: orange;
+}
