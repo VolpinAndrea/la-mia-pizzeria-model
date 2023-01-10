@@ -15,13 +15,14 @@
 
                 @foreach (Pizza pizza in Model)
                 {
-                    <div class="col-8 col-md-4 mt-4 bg-secondary m-2">
-                        <div class="rounded-0 shadow-lg  text-center">
-                            <img src="@pizza.Image" class="card-img-top rounded-circle" alt="immagine 1">
+                    <div class="col-8 col-md-4 mt-4 px-4">
+                        <div class="rounded-0 shadow-lg  text-center bg-secondary">
+                            <img src="@pizza.Image" class="card-img-top rounded-circle imgg" alt="immagine">
 
                             <div class="card-body pt-0 px-0 ">
                                 <h4 class="text-orange pt-3">@pizza.Name</h4>
                                 <p class="">@pizza.Description</p>
+                                <a href="@Url.Action("Dettagli","Pizza",new{ID=pizza.Id})">Dettagli</a>
                                 <h6 class="text-orange pb-3 ">@pizza.Prezzo</h6>
                             </div>
                         </div>
